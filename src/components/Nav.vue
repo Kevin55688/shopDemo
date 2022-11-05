@@ -8,10 +8,10 @@
       <div class="collapse navbar-collapse bg-dark-lg "  id="navbarSupportedContent" >
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#"><p>最新商品</p></a>
+            <a class="nav-link " aria-current="page" href="#"><router-link to="/"><p>首頁</p></router-link> </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><p>關於我們</p></a>
+            <a class="nav-link" href="#"><router-link to="/stream"><p>直播資訊</p></router-link></a>
           </li>
         </ul>
         <form class="d-flex">
@@ -19,17 +19,35 @@
           <button class="btn btn-outline-success" type="請輸入關鍵字"><font-awesome-icon icon="search" /></button>
         </form>
         <button class="btn btn-outline-success rounded-circle m-3"><font-awesome-icon icon="user" /></button>
-        <button class="btn btn-outline-success rounded-circle m-1"><font-awesome-icon icon="shopping-bag" /></button>
+        <button class="btn btn-outline-success rounded-circle m-1"><font-awesome-icon icon="shopping-bag" /></button>    
       </div>
     </div>
+    
+    
+    
   </nav>
 </template>
 
 
 <script>
+// import axios from 'axios';
+
 export default {
 name:'nav-top'
 }
+
+
+// ;(function(){
+//   axios.get('https://holodex.net/api/v2/videos')
+//             .then((res) =>{
+//               console.log(res)
+//             })
+//             .catch(()=>{
+//               console.log('err')
+//             })
+// })()
+
+
 </script>
 
 
@@ -39,6 +57,7 @@ height: 80px;
 }
 a{
 font-weight: bold;
+text-decoration: none;
 }
 
 a p:hover{

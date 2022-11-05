@@ -1,47 +1,24 @@
 <template>
   <div id="app">
     <Nav/>
-    <Banner/>
-    <Information/>
-    <NewArrivalVue/>
-    <EndingSoon/>
-    <DigitalContents/>
-    <RegularProducts/>
-    <Event/>
-    <Group/>
-    <Footer/>
-    <!-- <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/> -->
+    <router-view></router-view>
   </div>
-</template>
+</template> 
 
 
 <script>
 import Nav from '@/components/Nav.vue'
-import Banner from '@/components/Banner.vue'
-import Information from '@/components/Information.vue'
-import NewArrivalVue from './components/NewArrival.vue'
-import  DigitalContents from './components/DigitalContents.vue'
-import  Event from './components/Event.vue'
-import  Group from './components/group.vue'
-import  Footer from './components/Footer.vue'
 
 
 export default {
   name: 'app',
   components: {
     Nav,
-    Banner,
-    Information,
-    NewArrivalVue,
-    DigitalContents,
-    Event,
-    Group,
-    Footer
-  }
+  },
+  data () {
+    return {
+    };
+  },
 }
 
 </script>

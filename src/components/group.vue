@@ -59,14 +59,18 @@
         <div class="col-12"></div>
       </div>
     </div>
-    123123
   </div>
 </template>
 
 
 <script>
 export default {
-  name:'event-merch'
+  name:'event-merch',
+  props : [],
+  data () {
+    return {
+    }
+  }
 }
 </script>
 

@@ -30,7 +30,7 @@
         </div>
         </div>
 
-        <div class="col-6 col-lg-3  offset-6 offset-md-8  offset-lg-9">
+        <div class="col-6 col-md-4 col-lg-3  offset-6 offset-md-8  offset-lg-9">
           <a href="#"><img class="w-100" src="@/components/picture/andMore-digitalContents.png" ></a>
         </div>
         
@@ -84,6 +84,7 @@ background-color: white;
 .container-fluid{
   padding: 0px 15% 100px ;
 }
+
 
 
 
