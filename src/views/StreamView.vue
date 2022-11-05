@@ -16,7 +16,7 @@
                                 <p>{{streamer.title}}</p>
                                 <a href="#" class="channel-name"><p>{{streamer.channelName}}</p></a>
                                 <span v-show="streamer.status"  class="live-status">實況中．<span class="live-viewers">{{streamer.liveViewers}}人正在觀看</span></span>
-                                <span v-show="!streamer.status" class="isComing">將於{{comingSoon[streamer.channelName]}}分鐘內 開始實況</span>
+                                <span v-show="!streamer.status" class="isComing">將於{{comingSoon[streamer.channelName]}} 開始實況</span>
                             </div>
                         </div>
                     </div>
@@ -29,9 +29,6 @@
 import axios from 'axios';
 
 console.log(Date.UTC(new Date().getFullYear(),new Date().getMonth(), new Date().getDate(), new Date().getDate(), new Date().getHours() , new Date().getMinutes(), new Date().getSeconds()))
-
-
-
 
 export default {
   name: 'StreamPlace',
@@ -126,8 +123,9 @@ export default {
         this.streamInfo.map ((item) => {
           let startScheduledTimeUTC = Date.UTC(new Date(item.startScheduled).getFullYear(), new Date(item.startScheduled).getMonth(),new Date(item.startScheduled).getDate() ,new Date(item.startScheduled).getHours(),new Date(item.startScheduled).getMinutes(),new Date(item.startScheduled).getSeconds())
           let comingTimeUTC = startScheduledTimeUTC - this.nowTimeUTC
+          let hour = parseInt(comingTimeUTC % (1000 * 60 *60 *24) / (1000 * 60 * 60 ))
           let minutes = parseInt(comingTimeUTC % (1000 * 60 * 60) / (1000 * 60))
-          comingTimeList[item.channelName] = minutes
+          comingTimeList[item.channelName] =hour? hour + "小時" + minutes +"分鐘內" : minutes +"分鐘內"
         })
         return comingTimeList
       }
