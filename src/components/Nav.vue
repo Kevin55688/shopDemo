@@ -30,23 +30,9 @@
 
 
 <script>
-// import axios from 'axios';
-
 export default {
 name:'nav-top'
 }
-
-
-// ;(function(){
-//   axios.get('https://holodex.net/api/v2/videos')
-//             .then((res) =>{
-//               console.log(res)
-//             })
-//             .catch(()=>{
-//               console.log('err')
-//             })
-// })()
-
 
 </script>
 

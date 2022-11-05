@@ -28,11 +28,6 @@
 <script>
 import axios from 'axios';
 
-// const start = new Date('2022-11-04T13:00:07.000Z')
-// const today = new Date()
-// console.log(Date.UTC(today.getFullYear(),today.getMonth(), today.getDate()))
-// console.log(start.getFullYear(), start.getMonth(),start.getDate() ,start.getHours(),start.getMinutes(),start.getSeconds());
-// console.log(today.getFullYear());
 console.log(Date.UTC(new Date().getFullYear(),new Date().getMonth(), new Date().getDate(), new Date().getDate(), new Date().getHours() , new Date().getMinutes(), new Date().getSeconds()))
 
 
@@ -106,8 +101,6 @@ export default {
         let durationTimeMillisecList = []
         let durationTimeList = {}
         let startActualList = []
-        // let now = new Date()
-        // let nowUTC = Date.UTC(now.getFullYear(), now.getMonth(),now.getDate() ,now.getHours(),now.getMinutes(),now.getSeconds())
 
         this.streamInfo.map((item) => {
           if(item.startActual) {
