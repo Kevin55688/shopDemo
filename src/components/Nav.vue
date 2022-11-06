@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light  ">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container-fluid ">
       <a class="navbar-brand" href="#"><img src="./picture/Hololive_Production_nav.png"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,6 +38,16 @@ name:'nav-top'
 
 
 <style scoped>
+.navbar{
+  background-color: rgb(204, 202, 202);
+}
+
+.container-fluid{
+  width: 100%;
+  height: 100%;
+}
+
+
 img{
 height: 80px;
 }
@@ -61,7 +71,7 @@ background-color: rgba(242,244,246,1);
 
 @media screen and (min-width: 992px) {
 .navbar-collapse{
-background-color: white;
+background-color: transparent;
 }
 }
 

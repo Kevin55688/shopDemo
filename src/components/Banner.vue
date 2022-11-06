@@ -45,6 +45,11 @@ export default {
 
 <style scoped>
 
+
+.carousel{
+  margin-top: 100px;
+}
+
 .carousel-indicators{
   background-color: rgba(63, 51, 129, 0.6);
   border-radius: 50px;

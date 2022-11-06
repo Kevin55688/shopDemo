@@ -15,8 +15,9 @@
                             <div class="stream-title">
                                 <p>{{streamer.title}}</p>
                                 <a href="#" class="channel-name"><p>{{streamer.channelName}}</p></a>
-                                <span v-show="streamer.status"  class="live-status">實況中．<span class="live-viewers">{{streamer.liveViewers}}人正在觀看</span></span>
-                                <span v-show="!streamer.status" class="isComing">將於{{comingSoon[streamer.channelName]}} 開始實況</span>
+                                <span v-show="streamer.status"  class="live-status">實況中<span class="live-viewers" v-show="streamer.liveViewers != 0">．{{streamer.liveViewers}}人正在觀看</span></span>
+                                <span v-show="!streamer.status" class="isComing">將於{{comingSoon[streamer.channelName]}} 開始實況
+</span>
                             </div>
                         </div>
                     </div>
@@ -200,6 +201,9 @@ table {
 
 body{
   width: 100%;
+}
+.stream-container{
+  margin-top: 100px;
 }
 p{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
