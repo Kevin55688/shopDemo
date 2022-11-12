@@ -19,7 +19,6 @@ import NewArrivalVue from '@/components/NewArrival.vue'
 import  DigitalContents from '@/components/DigitalContents.vue'
 import  Event from '@/components/Event.vue'
 import  Group from '@/components/group.vue'
-import  Footer from '@/components/Footer.vue'
 
 export default {
   name: 'HomeView',
@@ -30,7 +29,6 @@ export default {
     DigitalContents,
     Event,
     Group,
-    Footer
   }
 }
 </script>

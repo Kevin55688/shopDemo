@@ -92,7 +92,7 @@ background-color: white;
 .info-title::before{
   content: '';
   height: 15px;
-  width: 100vw;
+  width: 100%;
   top: 50%;
   left: 0;
   position: absolute;

@@ -18,7 +18,9 @@
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="請輸入關鍵字"><font-awesome-icon icon="search" /></button>
         </form>
-        <button class="btn btn-outline-success rounded-circle m-3"><font-awesome-icon icon="user" /></button>
+        <router-link to="/login">
+          <button class="btn btn-outline-success rounded-circle m-3"><font-awesome-icon icon="user" /></button>
+        </router-link>
         <button class="btn btn-outline-success rounded-circle m-1"><font-awesome-icon icon="shopping-bag" /></button>    
       </div>
     </div>
