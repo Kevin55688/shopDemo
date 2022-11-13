@@ -9,6 +9,9 @@
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link " aria-current="page" href="#"><router-link to="/"><p>首頁</p></router-link> </a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#"><router-link to="/store"><p>最新商品</p></router-link> </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"><router-link to="/stream"><p>直播資訊</p></router-link></a>

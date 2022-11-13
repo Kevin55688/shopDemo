@@ -1,12 +1,5 @@
 <template>
   <div class="login-place">
-    <!-- <ul class="bg-triangles">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul> -->
 
 
 
@@ -46,80 +39,6 @@ export default {
 
 
 <style scoped lang="scss">
-
-// .bg-triangles{
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   z-index: -1;
-//   pointer-events: none;
-
-//   >li{
-//       position: absolute;
-//       list-style: none;
-//       display: block;
-//       bottom: -50%;
-//       animation: triangle linear 25s infinite;
-//       background-repeat: no-repeat;
-//       background-position: center center;
-//       background-size: cover;
-//       opacity: 0.3;
-      
-
-//       &:nth-child(1) {
-//         left: 40%;
-//       width: 400px;
-//       height: 400px;
-//         background-image: url('@/components/picture/bg/triangle-blue.png');
-//       animation-duration: 25s;
-//       }
-//       &:nth-child(2) {
-//       left: 0;
-//       width: 50px;
-//       height: 50px;
-//         background-image: url('@/components/picture/bg/triangle-green.png');
-//       animation-delay: 1s;
-//       animation-duration: 22s;
-//       }
-//       &:nth-child(3) {
-//         left: 5%;
-//         background-image: url('@/components/picture/bg/triangle-orange.png');
-//       width: 150px;
-//       height: 200px;
-//       animation-delay: 10s;
-//       animation-duration: 25s;
-//       }
-//       &:nth-child(4) {
-//         left: 80%;
-//         background-image: url('@/components/picture/bg/triangle-pink.png');
-//         width: 200px;
-//         height: 200px;
-//       animation-delay: 30s;
-//       animation-duration: 17s;
-        
-//       }
-//       &:nth-child(5) {
-//         left: 20%;
-//         background-image: url('@/components/picture/bg/triangle-purple.png');
-//         width: 150px;
-//         height: 150px;
-//       animation-duration: 27s;
-//       }
-//   }
-// }
-
-// @keyframes triangle {
-//       0% {
-//         transform: translateY(0);
-//         opacity: .3;
-//       }
-
-//       100% {
-//         transform: translateY(-1200px) rotate(600deg);
-//       }
-//     }
 
 
 .login-place{
@@ -194,8 +113,4 @@ export default {
     }
 
 }
-
-
-
-
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Nav/>
-    <router-view></router-view>
+    <router-view @isLightBox="LightBoxHandler"></router-view>
     <Footer/>
     <div class="bg-triangles">
       <div class="bg-item"></div>
@@ -10,6 +10,7 @@
       <div class="bg-item"></div>
       <div class="bg-item"></div>
     </div>
+    <div class="light-box" v-show="show">1232131313</div>
   </div>
 </template> 
 
@@ -27,8 +28,14 @@ export default {
   },
   data () {
     return {
+      show : false,
     };
   },
+  methods: {
+    LightBoxHandler (val) {
+      this.show = val
+    }
+  }
 }
 
 </script>
@@ -43,6 +50,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   position: relative;
+  overflow: hidden;
 }
 
 nav {
@@ -133,5 +141,14 @@ nav a.router-link-exact-active {
         transform: translateY(-6000px) rotate(600deg);
       }
     }
+
+.light-box{
+  background-color:rgba(0, 0, 0,.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
 
 </style>
