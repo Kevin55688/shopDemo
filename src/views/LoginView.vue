@@ -1,9 +1,5 @@
 <template>
   <div class="login-place">
-
-
-
-
     <div class="container">
       <form action="" method="post">
         <header>
@@ -52,6 +48,12 @@ export default {
         >form{
           width: 25vw;
           margin: auto;
+          @media screen and (max-width: 992px) {
+            width: 50vw;
+          }
+          @media screen and (max-width: 768px) {
+            width: 80vw;
+          }
           >.form-item{
             margin-bottom: 10px;
             position: relative;

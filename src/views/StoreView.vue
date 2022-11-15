@@ -151,6 +151,7 @@ export default {
       display: none;
       width: 20%;
       @media screen and (max-width: 992px){
+      width: 30%;
       display:block;
       padding: 20px;
       background-color:transparent;
@@ -159,6 +160,9 @@ export default {
       &:hover{
         background-color: rgb(113, 203, 228);
       }
+      }
+      @media screen and (max-width : 768px) {
+        width: 50%;
       }
   }
   }
@@ -216,9 +220,9 @@ export default {
         position: absolute;
         top: 0;
         right: 0;
-        background-color: rgb(185, 185, 224);
+        background-color: white;
         height: 100%;
-        min-width: 400px;
+        min-width: 300px;
         z-index: 999;
         transition: all 1s;
       }
@@ -228,9 +232,9 @@ export default {
         position: absolute;
         top: 0;
         right: 0;
-        background-color: rgb(185, 185, 224);
+        background-color: white;
         height: 100%;
-        min-width: 400px;
+        min-width: 300px;
         z-index: 999;
         transform: translateX(100%);
         transition: all 1s;
@@ -246,9 +250,15 @@ export default {
       >.goods-item{
         width: calc(25% - 30px);
         margin: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         @media screen and (max-width: 992px){
           width: calc((100%/3) - 30px);
-      }
+      }        
+        @media screen and (max-width: 768px){
+          width: calc((100%/2) - 30px);
+        }
         >a{
           >img{
             width: 100%;
