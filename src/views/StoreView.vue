@@ -67,11 +67,7 @@ const clickoutside = {
   bind(el, binding,) {
       function documentHandler(e) {
           // 这里判断点击的元素是否是本身，是本身，则返回
-          console.log(e.target.className)
           if (e.target.className == 'callFilter' || el.contains(e.target)) {
-              console.log(e);
-              console.log(el);
-              console.log(binding);
               return false;
           }
           // 判断指令中是否绑定了函数
@@ -198,29 +194,7 @@ export default {
           
         }
       }
-      >.filterHidden{
-        display:none;
-        @media screen and (max-width: 992px) {
-          position: relative;
-          display:flex;
-          font-size: 24px;
-          justify-content: center;
-          padding: 10px;
-          border-bottom: solid 1px rgb(174, 171, 171);
-          margin-bottom: 20%;
-          transform: translateX(100%);
-        }
-        >button{
-          position: absolute;
-          right: 0;
-          background-color:transparent;
-          border: none;
-          &:hover{
-          background-color: rgb(113, 203, 228);
-          }
-          
-        }
-      }
+
       >.title{
         border-bottom: 1px solid black;
         padding-bottom: 15px;

@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <Nav/>
-    <router-view @isLightBox="LightBoxHandler"></router-view>
-    <Footer/>
+    <!-- <Nav/> -->
+    <ReNav @isNavLightBox="navLightBoxHandler"/>
+    <router-view @isLightBox="filterLightBoxHandler"></router-view>
+    <Footer />
     <div class="bg-triangles">
       <div class="bg-item"></div>
       <div class="bg-item"></div>
@@ -10,31 +11,38 @@
       <div class="bg-item"></div>
       <div class="bg-item"></div>
     </div>
-    <div class="light-box" v-show="show">1232131313</div>
+    <div class="light-box" v-show="filterLightBoxShow"></div>
+    <div class="light-box" v-show="navLightBoxShow"></div>
   </div>
 </template> 
 
 
 <script>
-import Nav from '@/components/Nav.vue'
+// import Nav from '@/components/Nav.vue'
 import  Footer from '@/components/Footer.vue'
+import  ReNav from '@/components/ReNav.vue'
 
 
 export default {
   name: 'app',
   components: {
-    Nav,
+    // Nav,
     Footer,
+    ReNav,
   },
   data () {
     return {
-      show : false,
+      filterLightBoxShow : false,
+      navLightBoxShow : false,
     };
   },
   methods: {
-    LightBoxHandler (val) {
-      this.show = val
-    }
+    filterLightBoxHandler (val) {
+      this.filterLightBoxShow = val
+    },    
+    navLightBoxHandler (val) {
+      this.navLightBoxShow = val
+    },
   }
 }
 
